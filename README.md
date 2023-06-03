@@ -24,8 +24,9 @@
 * `php artisan key:generate`
 *  Add your database info in *.env*
 * `php artisan migrate:fresh --seed` to create and populate tables
-* `npm install & npm run dev`
-* `php artisan serve` to start the app on http://localhost:8000/
+* `npm install`
+* `npm run dev` 
+* open another terminal then run `php artisan serve` to start the app on http://localhost:8000/
 
 
 ## License
