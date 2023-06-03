@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\BookCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -9,6 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class BookCategoryFactory extends Factory
 {
+    protected $model = BookCategory::class;
     /**
      * Define the model's default state.
      *

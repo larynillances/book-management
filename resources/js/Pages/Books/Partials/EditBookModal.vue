@@ -29,6 +29,8 @@ const form = useForm({
   is_published: props.book?.published_date ? true : false,
 });
 
+console.log(props.book);
+
 const updateBook = () => {
   form.patch(route("books.update"), {
     preserveScroll: true,

@@ -69,7 +69,7 @@ class BookController extends Controller
             'author_id' => 'required',
             'category_id' => 'required'
         ]);
-
+        
         $book = Book::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -78,7 +78,7 @@ class BookController extends Controller
             'published_date' => $request->is_published ? Date::now() : NULL
         ]);
 
-        $book->category()->attach([$request->category_id]);
+        $book->category()->attach($book->id,['category_id' => $request->category_id]);
 
         return to_route('books');
     }
