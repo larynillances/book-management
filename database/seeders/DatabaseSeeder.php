@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         Author::factory(5)->create();
-        Book::factory(20)->has(Category::factory()->count(2))->create();
+        Author::factory(5)->create();
+        Category::factory(10)->create();
+        Book::factory(20)->create();
     }
 }
