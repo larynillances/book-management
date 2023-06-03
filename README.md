@@ -63,7 +63,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 *  Add your database info in *.env*
 * `php artisan migrate:fresh --seed` to create and populate tables
 * `npm install & npm run dev`
-* `php artisan serve` to start the app on http://localhost:8080/
+* `php artisan serve` to start the app on http://localhost:8000/
 
 
 ## License
